@@ -5,7 +5,8 @@ git clone https://github.com/victbar/sae_VoitureAutonome
 
 modifier le fichier pro avec
 
-cpp```
+```cpp
+
 
 SOURCES += \
     WidgetVoiture.cpp \
@@ -49,6 +50,7 @@ HEADERS += \
     strategie.h \
     suivrebord.h \
     tcpclient.h \
+
 
 
 ```
