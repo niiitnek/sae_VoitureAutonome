@@ -53,6 +53,8 @@ HEADERS += \
     tcpserveur.h \
     widgetlidar.h
 
+QT += core network
+QT += network
 
 ```
 
