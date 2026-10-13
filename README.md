@@ -50,9 +50,9 @@ HEADERS += \
     strategie.h \
     suivrebord.h \
     tcpclient.h \
-
+    tcpserveur.h \
+    widgetlidar.h
 
 
 ```
-    tcpserveur.h \
-    widgetlidar.h
+
