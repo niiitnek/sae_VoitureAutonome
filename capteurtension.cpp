@@ -3,7 +3,8 @@
 #include <QDebug>
 
 CapteurTension::CapteurTension()
-    : i2c(I2C1, 0x49)
+    : QObject(parent)
+    , i2c(I2C1, 0x49)
     , nivTension(0)
 {
     QI2cDevice::connect(&timer, &QTimer::timeout, this, &CapteurTension::afficherTension);
