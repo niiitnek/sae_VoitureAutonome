@@ -5,12 +5,14 @@
 #include "tcpserveur.h"
 //#include "tcpserver.h"
 
+#include <QObject>
 #include <QDebug>
 #include <QString>
 #include <QTimer>
 
-class CapteurTension
+class CapteurTension : public QObject
 {
+    Q_OBJECT
 public:
     CapteurTension();
     float getValue();
