@@ -57,4 +57,15 @@ QT += core network
 QT += network
 
 ```
+```cpp
 
+unix:!macx: LIBS += -L/opt/electronique/pi4TpInfo/sysroot/rplidar/rplidar_sdk/output/Linux/Release/ -lsl_lidar_sdk
+
+INCLUDEPATH += /opt/electronique/pi4TpInfo/sysroot/rplidar/rplidar_sdk/sdk/include
+INCLUDEPATH += /opt/electronique/pi4TpInfo/sysroot/rplidar/rplidar_sdk/sdk/src
+DEPENDPATH += /opt/electronique/pi4TpInfo/sysroot/rplidar/rplidar_sdk/sdk/include
+
+unix:!macx: PRE_TARGETDEPS += /opt/electronique/pi4TpInfo/sysroot/rplidar/rplidar_sdk/output/Linux/Release/libsl_lidar_sdk.a
+
+
+```
